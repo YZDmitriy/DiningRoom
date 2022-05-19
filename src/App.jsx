@@ -6,6 +6,7 @@ import NotFound from './Pages/NotFound';
 import { Header } from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Category from './Pages/Category';
+import Recipe from './Pages/Recipe';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contacts' element={<Contact />} />
           <Route path='/category/:name' element={<Category/>} />
+          <Route path='/meal/:id' element={<Recipe/>} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
       </main>
