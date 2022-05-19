@@ -2,7 +2,7 @@ import React from 'react';
 
 function Preolader(props) {
   return (
-    <div>
+    <div className='preloader'>
        <div className="preloader-wrapper active">
     <div className="spinner-layer spinner-red-only">
       <div className="circle-clipper left">

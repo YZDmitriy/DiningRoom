@@ -7,7 +7,7 @@ export function Header() {
     <nav className='header'>
       <div className='nav-wrapper'>
         <Link to='/' className='brand-logo'>
-          React Cook
+        Book of Recipes
         </Link>
         <ul id='nav-mobile' className='right hide-on-med-and-down'>
           <li>
