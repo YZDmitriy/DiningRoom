@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Pages/Home';
-import About from './components/Pages/About';
-import Contact from './components/Pages/Contact';
-import NotFound from './components/Pages/NotFound';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import NotFound from './Pages/NotFound';
 import { Header } from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Category from './Pages/Category';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contacts' element={<Contact />} />
+          <Route path='/category/:name' element={<Category/>} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
       </main>
