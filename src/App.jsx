@@ -1,15 +1,16 @@
-import { Header } from './Header/Header';
-import Footer from './Footer/Footer';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import NotFound from './Pages/NotFound';
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
+import NotFound from './components/Pages/NotFound';
+import { Header } from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <main className='container content'>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -18,7 +19,7 @@ function App() {
           <Route path='*' element={<NotFound/>} />
         </Routes>
       </main>
-      <Footer />
+     <Footer/>
     </>
   );
 }
