@@ -17,7 +17,7 @@ export function Header() {
             <Link to='/contacts'>Contacts</Link>
           </li>
           <li>
-            <a href='https://github.com/YZDmitriy'>Repo</a>
+            <a href='https://github.com/YZDmitriy' target="_blank" rel="noreferrer">My Github</a>
           </li>
         </ul>
       </div>
